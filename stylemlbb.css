@@ -33,7 +33,7 @@ body::before {
 		120deg,
 		rgba(0, 120, 255, 0.15) 0px,
 		rgba(0, 120, 255, 0.15) 1px,
-		transparent 1px,
+		transparent 5px,
 		transparent 70px
 	);
 
@@ -129,66 +129,72 @@ body::before {
 	transform: scale(1.03);
 }
 
-/* ICONS (CSS ONLY) */
-.btn-mlbb::before {
-	content: "";
-	width: 22px;
-	height: 22px;
-	position: absolute;
-	left: 18px;
-	top: 50%;
-	transform: translateY(-50%);
-	background-size: contain;
-	background-repeat: no-repeat;
-	opacity: 0.85;
+/* IKON ASOSIY STYLE */
+.btn-mlbb::before{
+    content:"";
+    display:inline-block;
+    width:25px;
+    height:25px;
+    margin-right:10px;
+    vertical-align:middle;
+
+    background-size:contain;
+    background-repeat:no-repeat;
 }
 
-/* TELEGRAM */
-.div-mlbb-button a:nth-child(1) .btn-mlbb::before {
-	background-image: url("https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg");
-	filter: invert(1);
+/* 1 - ALMAZ NARXLARI */
+.div-mlbb-button a:nth-child(1) .btn-mlbb::before{
+background-image:url("https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg");
+filter:invert(1);
 }
 
-/* CHAT (DEFAULT ICON) */
-.div-mlbb-button a:nth-child(2) .btn-mlbb::before {
-	background-image: url("https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/wechat.svg");
-	filter: invert(1);
+/* 2 - MLBB CHAT */
+.div-mlbb-button a:nth-child(2) .btn-mlbb::before{
+background-image:url("https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg");
+filter:invert(1);
 }
 
-/* YOUTUBE */
-.div-mlbb-button a:nth-child(3) .btn-mlbb::before {
-	background-image: url("https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg");
-	filter: invert(1);
+/* 3 - YOUTUBE */
+.div-mlbb-button a:nth-child(3) .btn-mlbb::before{
+background-image:url("https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg");
+filter:invert(1);
 }
 
-.div-mlbb-button a:nth-child(4) .btn-mlbb::before {
-	background-image: url("https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg");
-	filter: invert(1);
+/* 4 - AKKAUNT SAVDO */
+.div-mlbb-button a:nth-child(4) .btn-mlbb::before{
+background-image:url("https://cdn-icons-png.flaticon.com/512/3144/3144456.png");
 }
 
-.div-mlbb-button a:nth-child(5) .btn-mlbb::before {
-	background-image: url("https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg");
-	filter: invert(1);
+/* 5 - TELEGRAM KANAL */
+.div-mlbb-button a:nth-child(5) .btn-mlbb::before{
+background-image:url("https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg");
+filter:invert(1);
+}
+
+/* 6 - ADMIN */
+.div-mlbb-button a:nth-child(6) .btn-mlbb::before{
+background-image:url("https://cdn-icons-png.flaticon.com/512/1077/1077114.png");
 }
 
 /* RESPONSIVE */
 @media (max-width: 480px) {
 	.img-div img {
-		width: 200px;
+		width: 270px;
+		height: 250px;
 	}
 
 	.img-div h2 {
-		font-size: 18px;
+		font-size: 25px;
 	}
 
 	.btn-mlbb {
-		font-size: 15px;
-		width: 280px;
-		padding: 14px;
+		font-size: 20px;
+		width: 305px;
+		height: 75px;
 	}
 
 	p {
-		font-size: 13px;
+		font-size: 19px;
 	}
 }
 
